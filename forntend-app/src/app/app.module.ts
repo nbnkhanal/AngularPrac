@@ -9,17 +9,21 @@ import { ProductComponent } from './product/product.component';
 
 import { FormsModule } from '@angular/forms';
 import { ProductService } from './product.service';
+import { PlayerComponent } from './player/player.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyComponentComponent,
     UserComponent,
-    ProductComponent
+    ProductComponent,
+    PlayerComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [ProductService],
