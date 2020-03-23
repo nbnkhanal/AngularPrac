@@ -14,7 +14,7 @@
     <h2>CFC table</h2>      
   <table class="table table-striped">
     <thead>
-      <tr>
+      <tr *ngIf="products.length > 0">
         <th>Id</th>
         <th>Name</th>
         <th>Brand</th>
