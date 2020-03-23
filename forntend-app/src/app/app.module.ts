@@ -9,13 +9,15 @@ import { ProductComponent } from './product/product.component';
 
 import { FormsModule } from '@angular/forms';
 import { ProductService } from './product.service';
+import { PlayerComponent } from './player/player.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyComponentComponent,
     UserComponent,
-    ProductComponent
+    ProductComponent,
+    PlayerComponent
   ],
   imports: [
     BrowserModule,
