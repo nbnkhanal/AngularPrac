@@ -7,6 +7,8 @@ import { MyComponentComponent } from './my-component/my-component.component';
 import { UserComponent } from './user/user.component';
 import { ProductComponent } from './product/product.component';
 
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,6 +18,7 @@ import { ProductComponent } from './product/product.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],

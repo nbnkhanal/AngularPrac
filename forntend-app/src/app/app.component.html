@@ -1,18 +1,14 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
 <div style="text-align: center">
   <h1>
-    {{ title }} app is running!
+    {{ title }} is running!
   </h1>
 </div>
 
-<app-user> </app-user>
+<app-product></app-product>
 
-<router-outlet></router-outlet>
+<div>
+  <!-- <input type ="text" [value]="message"> -->
+  <input type ="text" [(ngModel)]="message">
+  {{message}}
+</div>
+<router-outlet></router-outlet> 

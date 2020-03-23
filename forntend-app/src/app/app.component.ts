@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'forntend-app';
+  //one way data binding: declare a variable in component, display in html
+  //two way data binding: declare a variable in component, display in html, if we change the variable in html, it should also change in component and vice versa
+
+  message: any = "Hello Ziyech!!!"
+
+  title = 'Football-app';
 }
