@@ -9,12 +9,12 @@ import { ProductService } from '../product.service';
 export class ProductComponent implements OnInit {
 
 products: any
-  constructor(service: ProductService) { 
-//injecting service
-    this.products = service.getProducts();
+  constructor(private service: ProductService) { 
+    // this.products = service.getProducts();
   }
 
   ngOnInit(): void {
+    this.products= this.service.getProducts();
   }
 
 }
